@@ -24,7 +24,7 @@ def setup():
                --enable-xdamage \
                --enable-x11-backend \
                --disable-papi \
-               --enable-wayland-backend \
+               --disable-wayland-backend \
 			   --disable-wayland-cairo-gl"
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))
