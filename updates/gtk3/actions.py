@@ -15,17 +15,16 @@ shelltools.export("HOME", get.workDIR())
 
 def setup():
     options = "--with-gdktarget=x11 \
+               --enable-xinerama \
                --with-xinput=yes \
                --enable-xkb \
-               --enable-xinerama \
-               --enable-xrandr \
-               --enable-xfixes \
-               --enable-xcomposite \
-               --enable-xdamage \
-               --enable-x11-backend \
+               --enable-shm \
+               --enable-silent-rules \
+               --enable-introspection \
+               --enable-gtk2-dependency \
                --disable-papi \
                --disable-wayland-backend \
-			   --disable-wayland-cairo-gl"
+	       --disable-wayland-cairo-gl"
 
     shelltools.export("CFLAGS", get.CFLAGS().replace("-fomit-frame-pointer",""))
 
