@@ -14,7 +14,8 @@ WorkDir = "gtk+-%s" % get.srcVERSION()
 shelltools.export("HOME", get.workDIR())
 
 def setup():
-    options = "--with-gdktarget=x11 \
+    options = "--enable-x11-backend \
+               --with-gdktarget=x11 \
                --enable-xinerama \
                --with-xinput=yes \
                --enable-xkb \
