@@ -91,7 +91,7 @@
             <Patch level="1">patches/mageia/net/net-netfilter-psd-mdv.patch</Patch>
             <Patch level="1">patches/mageia/net/net-netfilter-psd.patch</Patch>
             <Patch level="1">patches/mageia/net/net-sis190-fix-list-usage.patch</Patch>
-            <!--<Patch level="1">patches/mageia/net/net-wireless-ath9k_rx_dma_stop_check.patch</Patch>-->
+            <!--<Patch level="1">patches/mageia/net/net-wireless-ath9k_rx_dma_stop_check.patch</Patch>sil -->
 
 	    <Patch level="1">patches/mageia/scsi/scsi-megaraid-new-sysfs-name.patch</Patch>
             <Patch level="1">patches/mageia/scsi/scsi-ppscsi-2.6.2.patch</Patch>
