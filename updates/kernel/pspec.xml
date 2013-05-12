@@ -36,7 +36,7 @@
         </BuildDependencies>
          <Patches>
             <!-- linux patches -->
-            <Patch level="1" compressionType="xz">patches/linux/patch-3.9.1.xz</Patch>
+            <Patch level="1" compressionType="xz">patches/linux/patch-3.9.2.xz</Patch>
 
             <!-- Mandriva patches -->
             <Patch level="1">patches/mandriva/acpi-processor-M720SR-limit-to-C2.patch</Patch>
@@ -146,7 +146,7 @@
             <Patch level="1">patches/fedora/fix_xen_guest_on_old_EC2.patch</Patch>
 	    <Patch level="1">patches/fedora/forcedeth-dma-error-check.patch</Patch>
             <Patch level="1">patches/fedora/fs-proc-devtree-remove_proc_entry.patch</Patch>
-            <!--<Patch level="1">patches/fedora/hibernate-freeze-filesystems.patch</Patch>-->
+            <!--<Patch level="1">patches/fedora/hibernate-freeze-filesystems.patch</Patch>sil-->
             <Patch level="1">patches/fedora/input-kill-stupid-messages.patch</Patch>
             <!--<Patch level="1">patches/fedora/iwlwifi-fix-freeing-uninitialized-pointer.patch</Patch> sil-->
             <Patch level="1">patches/fedora/lis3-improve-handling-of-null-rate.patch</Patch>   
@@ -311,9 +311,9 @@
 
     <History>
         <Update release="15">
-            <Date>2013-04-30</Date>
-            <Version>3.9.1</Version>
-            <Comment>https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.9</Comment>
+            <Date>2013-05-12</Date>
+            <Version>3.9.2</Version>
+            <Comment>https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.9.2</Comment>
             <Type package="kernel">security</Type>
             <Requires>
                 <Action package="kernel">systemRestart</Action>
