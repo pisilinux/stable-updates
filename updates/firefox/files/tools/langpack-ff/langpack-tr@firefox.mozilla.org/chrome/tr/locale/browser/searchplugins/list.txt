@@ -1,6 +1,0 @@
-google
-yandex-tr
-wikipedia-tr
-amazondotcom
-eBay
-twitter
