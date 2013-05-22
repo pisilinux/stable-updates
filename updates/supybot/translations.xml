@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>supybot</Name>
+        <Summary xml:lang="en">A flexible, easy-to-use IRC bot written in Python.</Summary>
+        <Description xml:lang="en">Nested commands, easy configuration, and an incredibly flexible and easy-to-use plugin system distinguish Supybot from other IRC bots. There simply isn't a more flexible or easier to use IRC bot!</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>supybot</Name>
+        <Homepage>http://www.supybot.com</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>A flexible, easy-to-use IRC bot written in Python.</Summary>
+        <Description>Nested commands, easy configuration, and an incredibly flexible and easy-to-use plugin system distinguish Supybot from other IRC bots. There simply isn't a more flexible or easier to use IRC bot!</Description>
+        <Archive sha1sum="e9a0443557c82f983c6144d238a28d2ca83dc2d3" type="tarbz2">mirrors://sourceforge/supybot/Supybot-0.83.4.1.tar.bz2</Archive>
+    </Source>
+
+    <Package>
+        <Name>supybot</Name>
+        <Files>
+			<Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+			<Path fileType="doc">/usr/share/doc/supybot</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>20113-05-22</Date>
+            <Version>0.83.4.1</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
