@@ -21,6 +21,7 @@
         <AdditionalFiles>
             <!--Our main configure script. Configure paramters are stored here.-->
             <AdditionalFile target=".mozconfig" permission="0644">mozconfig</AdditionalFile>
+            <AdditionalFile target="browserconfig.properties" permission="0644">pisilinux/browserconfig.properties</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
             <Dependency versionFrom="21.0">xulrunner-devel</Dependency>
@@ -83,7 +84,7 @@
             <Patch level="1">pisilinux/autoconf-213-hack.diff</Patch>
             <Patch level="1">pisilinux/firefox-18-fix-cairo-build.patch</Patch>
             <Patch level="1">pisilinux/merge-kdejs.patch</Patch>
-            <Patch level="1">pisilinux/branding-locale.patch</Patch>
+            <!--<Patch level="1">pisilinux/branding-locale.patch</Patch>-->
             <!-- Disable for now on, needs more investigation -->
             <!--Patch level="0">pisilinux/zemberek-firefox5.patch</Patch-->
             <!--<Patch level="0">pisilinux/fix-double-turkish-option.diff</Patch>-->
@@ -189,7 +190,7 @@
             <Date>2013-05-15</Date>
             <Version>21.0</Version>
             <Comment>http://www.mozilla.org/en-US/firefox/21.0/releasenotes/</Comment>
-            <Name>Erdinç Gültekin</Name>
+            <Name>Erdinç Gültekin-Marcin Bojara</Name>
             <Email>erdincgultekin@pisilinux.org</Email>
         </Update>
         <Update release="6">

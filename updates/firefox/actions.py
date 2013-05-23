@@ -24,6 +24,11 @@ ObjDir = "obj-%s-unknown-linux-gnu" % get.ARCH() if get.ARCH() == "x86_64" else 
 def setup():
     # LOCALE
     shelltools.system("rm -rf langpack-ff/*/browser/defaults")
+    # replace browserconfig.properties
+    for locale in ["-".join(ls.split("@")[0].split("-")[1:]) for ls in shelltools.ls("langpack-ff")]:
+        print "Replacing browser.properties for %s locale" % locale
+        shelltools.copy("browserconfig.properties", "langpack-ff/langpack-%s@firefox.mozilla.org/browser/chrome/%s/locale/branding/" % (locale, locale))
+
     # Mozilla sticks on with autoconf-213
     shelltools.chmod("autoconf-213/autoconf-2.13", 0755)
 
@@ -76,11 +81,10 @@ def install():
 
     # Install language packs
     pisitools.insinto("/usr/lib/MozillaFirefox/browser/extensions", "./langpack-ff/*")
-    
+
     pisitools.dodir("/usr/lib/MozillaFirefox/dictionaries")
     shelltools.touch("%s%s/dictionaries/tr-TR.aff" % (get.installDIR(), "/usr/lib/MozillaFirefox"))
     shelltools.touch("%s%s/dictionaries/tr-TR.dic" % (get.installDIR(), "/usr/lib/MozillaFirefox"))
-    
 
     # Create profile dir, we'll copy bookmarks.html in post-install script
     pisitools.dodir("/usr/lib/MozillaFirefox/browser/defaults/profile")
