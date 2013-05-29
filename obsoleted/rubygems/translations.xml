@@ -5,4 +5,14 @@
         <Summary xml:lang="tr">Ruby kitaplıklarını paketlemek için ruby standardı</Summary>
         <Description xml:lang="tr">Ruby kitaplıklarını yayınlamak ve yönetmek için ruby standardıdır.</Description>
     </Source>
+
+    <Package>
+        <Name>rubygems</Name>
+        <Summary xml:lang="en">rubygems, The Ruby standard for packaging ruby libraries</Summary>
+    </Package>
+
+    <Package>
+        <Name>ruby-devel</Name>
+        <Summary xml:lang="tr">ruby için geliştirme dosyaları</Summary>
+    </Package>
 </PISI>
