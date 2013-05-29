@@ -12,8 +12,8 @@ from pisi.actionsapi import get
 import os
 
 def install():
-    pisitools.dobin("bin/gem")
+    pisitools.insinto("/usr/bin/gem-1.8", "bin/gem")
     pisitools.insinto("%s" %rubymodules.get_sitelibdir(), "lib/*")
 
-    for file_name in  ["/rubygems/validator.rb", "/rubygems/custom_require.rb"]:
+    for file_name in  ["/rubygems/validator.rb"]:
         shelltools.chmod("%s%s%s" % (get.installDIR(), rubymodules.get_sitelibdir(), file_name), 0644)
