@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>linux-firmware</Name>
+        <Homepage>http://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>ipw2100-fw</License>
+        <License>ipw2200-fw</License>
+        <License>freedist</License>
+        <License>GPLv2+</License>
+        <License>GPLv2</License>
+        <License>MIT</License>
+        <IsA>data</IsA>
+        <Summary>Firmware files used by the Linux kernel</Summary>
+        <Description>linux-firmware contains different firmware files required for some devices to operate correctly.</Description>
+        <Archive sha1sum="42261fb2cac27d8db35614b91c90b65c51c71744" type="tarxz">http://source.pisilinux.org/1.0/linux-firmware-2013-05-28.tar.xz</Archive>
+	<Archive sha1sum="dd685266f7bc0acb0d455462637d23e3e895bc96" type="tarxz" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/common-fw.tar.xz</Archive>
+        <Archive sha1sum="b2bb7fce3ea67d131f543a48134f7a65f2a8d834" type="tarxz" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware-ipw.tar.xz</Archive>
+        <Archive sha1sum="3a28328f5e853d0d9b59d265306a2e084cf20b42" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/bfa_fw_v3.1.2.1.tar.bz2</Archive>
+        <Archive sha1sum="a5a616a9f765cf9cbb224deb7ccefdc82a7fe4d9" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/firmware-nonfreebox-2-tar.bz2</Archive>
+        <Archive sha1sum="6c18b28e62637fb809eaff89fff623ae1d470500" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/ar9170.tar.bz2</Archive>
+        <Archive sha1sum="aa3b414c2948be5f226a25fa5f37e56fd659a3bb" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/ipw2x00-firmware.tar.bz2</Archive>
+        <Archive sha1sum="f7ecf5412b7818871fa2798f1b314f8ddddb494e" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/aic94xx-seq.tar.bz2</Archive>
+        <Archive sha1sum="9be626663e9b9d15278f2b5cd1c916570eb62727" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/zd12x1-firmware.tar.bz2</Archive>
+        <Archive sha1sum="16d5f4dcc90f978732a9a5b3b0347672a6cc4c36" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/accessrunner-firmware.tar.bz2</Archive>
+        <Archive sha1sum="e40729d30ad6d7a6c88b90ee7bc5fbaeb9458cb7" type="tarbz2" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/rtl8192se-firmware.tar.bz2</Archive>
+        <Archive sha1sum="5d333e75f02a57861565337c14f6944090a242a8" type="tarxz" target="linux-firmware/mix">http://source.pisilinux.org/erdinc/firmware/nouveau-1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>rpm2targz</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>linux-firmware</Name>
+        <Files>
+            <Path fileType="data">/lib/firmware</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="4">
+            <Date>2013-06-05</Date>
+            <Version>20130528</Version>
+            <Comment>bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="3">
+            <Date>2013-04-07</Date>
+            <Version>20130421</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-03-07</Date>
+            <Version>20130224</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-12-12</Date>
+            <Version>20121212</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
