@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>frostwire</Name>
+        <Homepage>http://www.frostwire.com</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <Icon>frostwire</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>Simple BitTorrent client</Summary>
+        <Description>Frostwire is a free, open source BitTorrent client, first released as a fork of LimeWire.</Description>
+        <!-- Frostwire deletes previous source codes when a new version is released. The 5.2.x series have some problems, so stick with the 5.1.x series for now.
+        <Archive sha1sum="f6ef57414395b4ed8a7e007dc9fba32eb5818e34" type="targz">http://newyork1.frostwire.com/frostwire/5.1.5/frostwire-5.1.5.noarch.tar.gz</Archive> -->
+        <Archive sha1sum="26b0bae5f96eab1191c7121a5f7709a7989c8506" type="targz">http://dl.frostwire.com/frostwire/5.6.0/frostwire-5.6.0.noarch.tar.gz</Archive>
+        <Patches>
+            <Patch level="1">add-global-path.diff</Patch>
+            <Patch level="0">frostwire.desktop.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>frostwire</Name>
+        <RuntimeDependencies>
+            <Dependency>sun-jre</Dependency>
+            <Dependency>vlc</Dependency>
+            <Dependency>mplayer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/frostwire</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+        <AdditionalFiles>
+            <!-- Icon from lw-resources.jar file -->
+            <AdditionalFile target="/usr/share/pixmaps/frostwire.png" permission="0644" owner="root">frostwire64x64.png</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2013-06-11</Date>
+            <Version>5.6.0</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-04-04</Date>
+            <Version>5.5.5</Version>
+            <Comment>bump</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>erdincgultekin@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-09-01</Date>
+            <Version>5.3.9</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
