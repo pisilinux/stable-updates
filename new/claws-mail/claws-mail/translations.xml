@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>claws-mail</Name>
+        <Summary xml:lang="tr">Claws Mail, GTK+ tabanlı elektronik posta istemcisi.</Summary>
+        <Description xml:lang="tr">Claws Mail GTK+ tabanlı hafif ve hızlı bir email istemcisi ve haber okuyucusudur.</Description>
+    </Source>
+</PISI>
