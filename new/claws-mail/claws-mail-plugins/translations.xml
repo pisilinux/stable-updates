@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>claws-mail-plugins</Name>
+        <Summary xml:lang="en">Additional plugins for claws-mail</Summary>
+        <Description xml:lang="en">Claws Mail, Additional plugins for claws-mail</Description>
+    </Source>
+
+    <Package>
+        <Name>claws-mail-plugins-acpi-notifier</Name>
+        <Summary xml:lang="en">ACPI notification plugin for claws-mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-address-keeper</Name>
+        <Summary xml:lang="en">Never forget a typed address in Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-archive</Name>
+        <Summary xml:lang="en">Archiving features for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-archive-devel</Name>
+        <Summary xml:lang="tr">claws-mail-plugins-archive için geliştirme dosyaları</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-att-remover</Name>
+        <Summary xml:lang="en">Attachments remover plugin for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-attachwarner</Name>
+        <Summary xml:lang="en">Attachment warner plugin for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-bsfilter</Name>
+        <Summary xml:lang="en">Bayesian spam filtering for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-clamd</Name>
+        <Summary xml:lang="en">Use Clam AntiVirus to scan messages in Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-fancy</Name>
+        <Summary xml:lang="en">Display HTML emails in Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-fetchinfo</Name>
+        <Summary xml:lang="en">Modify headers of downloaded messages in Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-gtkhtml2-viewer</Name>
+        <Summary xml:lang="en">GTK Html Viewer for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-mailmbox</Name>
+        <Summary xml:lang="en">Add support for mailboxes in mbox format to Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-newmail</Name>
+        <Summary xml:lang="en">Make Claws Mail write a message header summary to a file</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-notification</Name>
+        <Summary xml:lang="en">Various ways to notify about new messages in Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-notification-devel</Name>
+        <Summary xml:lang="tr">claws-mail-plugins-notification için geliştirme dosyaları</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-pdf-viewer</Name>
+        <Summary xml:lang="en">Enables the viewing of PDF and PostScript attachments</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-perl</Name>
+        <Summary xml:lang="en">Perl based extended filtering engine for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-python</Name>
+        <Summary xml:lang="en">Python scripting access to Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-rssyl</Name>
+        <Summary xml:lang="en">RSS plugin for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-spam-report</Name>
+        <Summary xml:lang="en">Report spam mail to various places with Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-tnef</Name>
+        <Summary xml:lang="en">TNEF message parsing for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-vcalendar</Name>
+        <Summary xml:lang="en">TNEF message parsing for Claws Mail</Summary>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-vcalendar-devel</Name>
+        <Summary xml:lang="tr">claws-mail-plugins-vcalendar için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>

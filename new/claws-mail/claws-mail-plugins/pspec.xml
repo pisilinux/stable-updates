@@ -1,0 +1,551 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>claws-mail-plugins</Name>
+        <Homepage>http://sourceforge.net/projects/claws-mail</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Summary>Additional plugins for claws-mail</Summary>
+        <Description>Claws Mail, Additional plugins for claws-mail</Description>
+        <Archive sha1sum="251b606aa8ba7b5a1c6149a87b3d8b57750065f2" type="targz">http://sourceforge.net/projects/sylpheed-claws/files/extra%20plugins/3.9.0/claws-mail-extra-plugins-3.9.0.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>claws-mail-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>curl-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>glibc-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>webkit-gtk2-devel</Dependency>
+            <Dependency>libsoup-gnome</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>claws-mail-plugins-acpi-notifier</Name>
+        <Summary>ACPI notification plugin for claws-mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/acpi_notifier.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/acpi_notifier.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/acpi_notifier.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/acpi-notifier</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-address-keeper</Name>
+        <Summary>Never forget a typed address in Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/address_keeper.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/address_keeper.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/address_keeper.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/address-keeper</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-archive</Name>
+        <Summary>Archiving features for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/archive.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/archive.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/archive.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/archive</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-archive-devel</Name>
+        <Summary>claws-mail-plugins-archive için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/claws-mail/plugins/archive/archiver.h</Path>
+            <Path fileType="header">/usr/include/claws-mail/plugins/archive/archiver_prefs.h</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-att-remover</Name>
+        <Summary>Attachments remover plugin for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/att_remover.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/att_remover.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/att_remover.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/att-remover</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-attachwarner</Name>
+        <Summary>Attachment warner plugin for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/attachwarner.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/attachwarner.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/attachwarner.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/attachwarner</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-bsfilter</Name>
+        <Summary>Bayesian spam filtering for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/bsfilter.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/bsfilter.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/bsfilter_plugin.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/bsfilter</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-clamd</Name>
+        <Summary>Use Clam AntiVirus to scan messages in Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/clamd.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/clamd.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/clamd.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/clamd</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-fancy</Name>
+        <Summary>Display HTML emails in Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>webkit-gtk2</Dependency>
+            <Dependency>libsoup-gnome</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/fancy.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/fancy.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/fancy.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/fancy</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-fetchinfo</Name>
+        <Summary>Modify headers of downloaded messages in Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/fetchinfo_plugin.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/fetchinfo_plugin.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/fetchinfo-plugin.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/fetchinfo</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-gtkhtml2-viewer</Name>
+        <Summary>GTK Html Viewer for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>libxml2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/gtkhtml2_viewer.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/gtkhtml2_viewer.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/gtkhtml2_viewer.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/gtkhtml2</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-mailmbox</Name>
+        <Summary>Add support for mailboxes in mbox format to Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/mailmbox.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/mailmbox.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/mailmbox.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/mailmbox</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-newmail</Name>
+        <Summary>Make Claws Mail write a message header summary to a file</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>glibc</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/newmail.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/newmail.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/newmail.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/newmail</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-notification</Name>
+        <Summary>Various ways to notify about new messages in Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/notification_plugin.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/notification_plugin.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/notification_plugin.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/notification</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-notification-devel</Name>
+        <Summary>claws-mail-plugins-notification için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency release="current">claws-mail-plugins-notification</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/claws-mail/plugins/notification_plugin/</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-pdf-viewer</Name>
+        <Summary>Enables the viewing of PDF and PostScript attachments</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>peopler-glib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/pdf_viewer.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/pdf_viewer.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/pdf_viewer.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/pdf-viewer</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-perl</Name>
+        <Summary>Perl based extended filtering engine for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/perl_plugin.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/perl_plugin.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/perl_plugin.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/perl</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-python</Name>
+        <Summary>Python scripting access to Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/python_plugin.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/python_plugin.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/python_plugin.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/python</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-rssyl</Name>
+        <Summary>RSS plugin for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/rssyl.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/rssyl.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/rssyl.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/rssyl</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-spam-report</Name>
+        <Summary>Report spam mail to various places with Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/spamreport.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/spamreport.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/spam_report.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/spam-report</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-tnef</Name>
+        <Summary>TNEF message parsing for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/tnef_parse.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/tnef_parse.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/tnef_parse.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/tnef</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-vcalendar</Name>
+        <Summary>TNEF message parsing for Claws Mail</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>curl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/vcalendar.a</Path>
+            <Path fileType="library">/usr/lib/claws-mail/plugins/vcalendar.so</Path>
+            <Path fileType="library">/usr/share/locale/*/LC_MESSAGES/vcalendar.mo</Path>
+            <Path fileType="doc">/usr/share/doc/claws-mail-plugins/vcalendar</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>claws-mail-plugins-vcalendar-devel</Name>
+        <Summary>claws-mail-plugins-vcalendar için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">claws-mail</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/claws-mail/plugins/vcalendar/</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2013-06-11</Date>
+            <Version>3.9.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
