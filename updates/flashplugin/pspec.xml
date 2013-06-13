@@ -43,8 +43,8 @@
             <Date>2013-06-13</Date>
             <Version>11.2.202.291</Version>
             <Comment>security update</Comment>
-            <Name>Erdinç Gültekin</Name>
-            <Email>admins@pisilinux.org</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Update>
         <Update release="5" type="security">
             <Date>2013-04-23</Date>
