@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>aria2</Name>
+        <Summary xml:lang="tr">XBoard, satranç oyunu</Summary>
+        <Description xml:lang="tr">xboard, arayüze sahip linux için bir satranç oyunudur.</Description>
+    </Source>
+</PISI>

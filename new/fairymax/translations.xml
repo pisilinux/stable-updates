@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>fairymax</Name>
+        <Summary xml:lang="tr">fairymax, XBoard için satranç ve satranç varyasyonlarını içeren motor.</Summary>
+        <Description xml:lang="tr">fairymax, A XBoard compatible chess and chess-variant engine</Description>
+    </Source>
+</PISI>

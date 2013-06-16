@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>fairymax</Name>
+        <Homepage>http://home.hccnet.nl/h.g.muller/CVfairy.html</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>custom</License>
+        <IsA>app:gui</IsA>
+        <Icon>fairymax</Icon>
+        <Summary>XBoard, için satranç ve satranç varyasyonlarını içeren motor.</Summary>
+        <Description>fairymax, A XBoard compatible chess and chess-variant engine</Description>
+        <Archive sha1sum="97c2cc931627d2c9b2de7d292cca11a9af424e95" type="targz">http://home.hccnet.nl/h.g.muller/fairymax.tar.gz</Archive>
+    </Source>
+
+    <Package>
+        <Name>fairymax</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/fairymax</Path>
+            <Path fileType="man">/usr/share/man/man6/fairymax.6.gz</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-06-16</Date>
+            <Version>4.8</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

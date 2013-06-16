@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xboard</Name>
+        <Homepage>http://www.gnu.org/software/xboard/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <IsA>app:gui</IsA>
+        <Icon>xboard</Icon>
+        <Summary>XBoard, satranç oyunu</Summary>
+        <Description>xboard, arayüze sahip linux için bir satranç oyunudur.</Description>
+        <Archive sha1sum="0f23e01561fedb1c05a72734f37fd3fce5a7c5aa" type="targz">http://ftp.gnu.org/gnu/xboard/xboard-4.7.1.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libXt-devel</Dependency>
+            <Dependency>libXmu-devel</Dependency>
+            <Dependency>libXaw-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>            
+            <Dependency>fairymax</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>xboard</Name>
+        <RuntimeDependencies>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libXmu</Dependency>
+            <Dependency>libXaw</Dependency>
+            <Dependency>librsvg</Dependency>            
+            <Dependency>fairymax</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/xboard</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/mime/packages/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons/</Path>
+            <Path fileType="data">/usr/share/info/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="config">/etc/xboard.conf</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-06-16</Date>
+            <Version>4.7.1</Version>
+            <Comment>Version bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
