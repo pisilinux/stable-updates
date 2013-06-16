@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgoogle-gdata-mono</Name>
+        <Homepage>http://code.google.com/p/google-gdata/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2</License>
+        <IsA>library</IsA>
+        <Summary>Mono bindings for the Google GData API</Summary>
+        <Description>The Google Data APIs (GData) provide a simple protocol for reading and writing data on the web.</Description>
+        <Archive sha1sum="8e24b7ad03899b31499716c668e38f6af3189480" type="targz">https://google-gdata.googlecode.com/files/libgoogle-data-mono-1.4.0.2.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>mono-devel</Dependency>
+            <Dependency>mono-nunit</Dependency>
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>libgoogle-gdata-mono</Name>
+        <RuntimeDependencies>
+            <Dependency>mono-runtime</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib/mono/gac/</Path>
+            <Path fileType="library">/usr/lib/mono/GData-Sharp/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+    
+    <Package>
+        <Name>libgoogle-gdata-mono-devel</Name>
+        <RuntimeDependencies>
+            <Dependency>libgoogle-gdata-mono</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2013-06-16</Date>
+            <Version>1.4.0.2</Version>
+            <Comment>First release.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
