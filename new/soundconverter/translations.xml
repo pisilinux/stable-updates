@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<PISI>
+    <Source>
+        <Name>soundconverter</Name>
+        <Summary xml:lang="en">SoundConverter, Gnome için Ses dönüştürücüsü.</Summary>
+        <Description xml:lang="en">SoundConverter for Linux is the leading audio file converter for the GNOME Desktop. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc...), and writes to WAV, FLAC, MP3, AAC, and Ogg Vorbis files.</Description>
+    </Source>
+</PISI>

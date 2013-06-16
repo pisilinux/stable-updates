@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<!DOCTYPE PISI SYSTEM 'http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd'>
+<PISI>
+    <Source>
+        <Name>soundconverter</Name>
+        <Homepage>http://soundconverter.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>soundconverter</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>SoundConverter, Gnome için Ses dönüştürücüsü.</Summary>
+        <Description>SoundConverter for Linux is the leading audio file converter for the GNOME Desktop. It reads anything GStreamer can read (Ogg Vorbis, AAC, MP3, FLAC, WAV, AVI, MPEG, MOV, M4A, AC3, DTS, ALAC, MPC, Shorten, APE, SID, MOD, XM, S3M, etc...), and writes to WAV, FLAC, MP3, AAC, and Ogg Vorbis files.</Description>
+        <Archive sha1sum="1418ff58066b4d46fb38714060b103ae573efc33" type="tarxz">https://launchpad.net/soundconverter/trunk/2.1.1/+download/soundconverter-2.1.1.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>soundconverter</Name>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/soundconverter</Path>
+            <Path fileType="data">/usr/share/soundconverter/</Path>
+            <Path fileType="doc">/usr/share/doc/</Path>
+            <Path fileType="data">/usr/share/icons/</Path>
+            <Path fileType="man">/usr/share/man/</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="data">/usr/share/pixmaps/</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2013-06-16</Date>
+            <Version>2.1.1</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
