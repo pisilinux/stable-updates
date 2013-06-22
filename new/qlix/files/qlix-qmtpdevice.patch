@@ -1,0 +1,12 @@
+diff -Nuar qlix-0.2.6.OSmanOS/widgets/QMtpDevice.cpp qlix-0.2.6/widgets/QMtpDevice.cpp
+--- qlix-0.2.6.OSmanOS/widgets/QMtpDevice.cpp	2008-08-13 21:40:06.000000000 +0300
++++ qlix-0.2.6/widgets/QMtpDevice.cpp	2013-06-22 23:47:22.827121198 +0300
+@@ -225,7 +225,7 @@
+   MTP::Folder* rootFolder = _device->RootFolder();
+   count_t fileCount = rootFolder->FileCount();
+ 
+-  QString iconPath = QString("/tmp/QlixDeviceIcon-%1").arg( (int) this); 
++  QString iconPath = QString("/tmp/QlixDeviceIcon-%1").arg( (long) this); 
+   MTP::File* iconFile= NULL;
+   for (count_t i = 0; i < fileCount; i++)
+   {

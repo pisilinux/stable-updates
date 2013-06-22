@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>qlix</Name>
+        <Summary xml:lang="en">Manage MTP devices</Summary>
+        <Description xml:lang="en">Qlix is a small QT based graphical user interface for libmtp to communicate with MTP Basic devices.</Description>
+    </Source>
+
+    <Package>
+        <Name>qlix-devel</Name>
+        <Summary xml:lang="tr">qlix için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>
