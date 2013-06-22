@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>qt4-fsarchiver</Name>
+        <Summary xml:lang="tr">fsarchiver için görsel arayüz</Summary>
+	<Description xml:lang="tr">qt4-fsarchiver, fsarchiver için bölümleri ve dosyaları kaydetmeye/onarmaya yarayan bir görsel arayüzdür.</Description>
+    </Source>
+</PISI>
