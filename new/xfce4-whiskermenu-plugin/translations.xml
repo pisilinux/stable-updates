@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>xfce4-whiskermenu-plugin</Name>
+        <Summary xml:lang="en">Whisker Menu is an alternate application launcher for Xfce.</Summary>
+        <Description xml:lang="en">Whisker Menu is an alternate application launcher for Xfce. When you open it you are shown a list of applications you have marked as favorites.</Description>
+    </Source>
+</PISI>

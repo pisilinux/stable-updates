@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>xfce4-whiskermenu-plugin</Name>
+        <Homepage>http://gottcode.org/xfce4-whiskermenu-plugin</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Icon>xfce4-whiskermenu-plugin</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>A utility to find and clean various forms of lint on a filesystem</Summary>
+        <Description>Whisker Menu is an alternate application launcher for Xfce. When you open it you are shown a list of applications you have marked as favorites.</Description>
+        <Archive sha1sum="f871d25c186982c44ef38488007a059510ce18dd" type="tarbz2">http://gottcode.org/xfce4-whiskermenu-plugin/xfce4-whiskermenu-plugin-1.0.0-src.tar.bz2</Archive>
+        <BuildDependencies> 
+            <Dependency>exo-devel</Dependency>
+            <Dependency>garcon-devel</Dependency>
+            <Dependency>libxfce4ui-devel</Dependency>
+            <Dependency>xfce4-panel-devel</Dependency>
+        </BuildDependencies>
+        <AdditionalFiles>
+            <AdditionalFile target="po/xfce4-whiskermenu-plugin.po" permission="0644" owner="root">xfce4-whiskermenu-plugin.po</AdditionalFile>
+        </AdditionalFiles>
+    </Source>
+
+    <Package>
+        <Name>xfce4-whiskermenu-plugin</Name>
+        <RuntimeDependencies>
+            <Dependency>exo</Dependency>
+            <Dependency>garcon</Dependency>
+            <Dependency>libxfce4ui</Dependency>
+            <Dependency>xfce4-panel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc/xfce4-whiskermenu-plugin/</Path>
+            <Path fileType="data">/usr/share/icons/</Path>
+            <Path fileType="data">/usr/share/xfce4/</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="library">/usr/lib/xfce4/panel/plugins/</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/xfce4/panel/plugins/whiskermenu.desktop">whiskermenu.desktop</AdditionalFile>
+        </AdditionalFiles>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-06-22</Date>
+            <Version>1.0.0</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

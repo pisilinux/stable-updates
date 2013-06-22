@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=Whisker Menu
+Name[tr]=Gözde Menü
+Comment=Show a menu to easily access installed applications
+Comment[tr]=Kurulu uygulamalara kolay erişim menüsünü göster
+Icon=xfce4-whiskermenu
+X-XFCE-Module=whiskermenu
+X-XFCE-Internal=false
