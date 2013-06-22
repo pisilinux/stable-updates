@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>lives</Name>
+        <Summary xml:lang="tr">Video Düzenleme aracı</Summary>
+        <Description xml:lang="en">LiVES is a Video Editing System. It is designed to be simple to use, yet powerful.</Description>
+    </Source>
+
+    <Package>
+        <Name>lives-devel</Name>
+        <Summary xml:lang="tr">lives için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>
