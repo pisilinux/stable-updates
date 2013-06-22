@@ -50,6 +50,16 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>lives-devel</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">lives</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/weed/</Path>
+        </Files>
+    </Package>
+
     <History>
         <Update release="1">
             <Date>2013-06-22</Date>
