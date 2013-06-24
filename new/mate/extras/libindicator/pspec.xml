@@ -14,15 +14,15 @@
         <Summary>A set of symbols and convience functions that all indicators would like to use.</Summary>
         <Description>Libary with a set of symbols and convience functions that all indicators would like to use (GTK+ 2 library)</Description>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
-        <Archive sha1sum="83fa101c972a6ff7d42f108f6e0e6adcbc439d5a" type="targz">http://launchpad.net/libindicator/0.3/0.3.22/+download/libindicator-0.3.22.tar.gz</Archive>
+        <Archive sha1sum="d031e177b657fbe0034e9911dc6abea460083e88" type="targz">https://launchpad.net/libindicator/0.5/0.4.90/+download/libindicator-0.4.90.tar.gz</Archive>
     </Source>
     
     <Package>
         <Name>libindicator</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
+            <Dependency>gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
 	    <Path fileType="data">/usr/share</Path>
@@ -44,6 +44,13 @@
     </Package>
     
     <History>
+        <Update release="2">
+            <Date>2013-06-23</Date>
+            <Version>0.4.90</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>namso-01@hotmail.it</Email>
+        </Update>
         <Update release="1">
             <Date>2012-09-01</Date>
             <Version>0.3.22</Version>
