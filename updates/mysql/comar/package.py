@@ -26,6 +26,10 @@ def postInstall(fromVersion, fromRelease, toVersion, toRelease):
     os.system("/bin/chown -R mysql:mysql /run/mysqld")
     os.system("/bin/chmod -R 0755 /run/mysqld")
 
+    if os.path.exists("/var/rundirs/mysqld"):
+        os.system("/bin/chown -R mysql:mysql /var/rundirs/mysqld")
+        os.system("/bin/chmod -R 0755 /var/rundirs/mysqld")
+
     # On first install...
     if not os.path.exists("/var/lib/mysql/mysql"):
         # Create the database
