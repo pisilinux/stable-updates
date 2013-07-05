@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>wordpress-tr</Name>
+        <Summary xml:lang="tr">Wordpress için Türkçe dil dosyaları</Summary>
+    </Source>
+</PISI>
+ 

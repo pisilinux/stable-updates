@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>wordpress-langpack</Name>
+        <Homepage>http://wordpress.org/</Homepage>
+        <Packager>
+            <Name>Fatih Turgel</Name>
+            <Email>hitaf@pisilinux.org</Email>
+        </Packager>
+        <License>GPL</License>
+        <IsA>locale</IsA>
+        <Summary>Language packages for wordpress</Summary>
+        <Description>Language packages for wordpress package.</Description>
+	<Archive sha1sum="316b8a1fe6533ac493a343e8548ace5fabb340c3" type="tarxz">http://source.pisilinux.org/1.0/wordpress-langpack-3.5.2.tar.xz</Archive>
+    </Source>
+    <Package>
+        <Name>wordpress-ca</Name>
+	<IsA>locale:ca</IsA>
+	<Summary>Catalan language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*ca*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*ca*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-de</Name>
+	<IsA>locale:de</IsA>
+	<Summary>Deutch language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*de_DE*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*de_DE*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-es</Name>
+	<IsA>locale:es</IsA>
+	<Summary>Spanish language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*es_ES*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*es_ES*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-fr</Name>
+	<IsA>locale:fr</IsA>
+	<Summary>French language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*fr_FR*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*fr_FR*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-hu</Name>
+	<IsA>locale:hu</IsA>
+	<Summary>Hungarian language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*hu_HU*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*hu_HU*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-it</Name>
+	<IsA>locale:it</IsA>
+	<Summary>Italian language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*it_IT*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*it_IT*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-nl</Name>
+	<IsA>locale:nl</IsA>
+	<Summary>Dutch language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*nl_NL*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*nl_NL*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-pl</Name>
+	<IsA>locale:pl</IsA>
+	<Summary>Polish language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*pl_PL*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*pl_PL*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-pt-BR</Name>
+	<IsA>locale:pt-BR</IsA>
+	<Summary>Brazilian Portuguese language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*pt_BR*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*pt_BR*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-ru</Name>
+	<IsA>locale:ru</IsA>
+	<Summary>Russian language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*ru_RU*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*ru_RU*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-sv</Name>
+	<IsA>locale:sv</IsA>
+	<Summary>Swedish language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*sv_SE*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*sv_SE*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-tr</Name>
+	<IsA>locale:tr</IsA>
+	<Summary>Turkish language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*tr_TR*</Path>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/themes/*tr_TR*</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>wordpress-uk</Name>
+	<IsA>locale:uk</IsA>
+	<Summary>Ukrainian language package for wordpress</Summary>
+        <RuntimeDependencies>
+            <Dependency>wordpress</Dependency>
+        </RuntimeDependencies>
+        <Files>
+	    <Path fileType="data">/usr/share/wordpress/wp-content/languages/*uk*</Path>
+	    <!--<Path fileType="data">/usr/share/wordpress/themes/*uk</Path>-->
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2013-07-04</Date>
+            <Version>3.5.2</Version>
+            <Comment>First release</Comment>
+            <Name>Fatih Turgel</Name>
+            <Email>hitaf@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
+ 
