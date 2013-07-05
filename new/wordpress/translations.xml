@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>wordpress</Name>
+        <Summary xml:lang="tr">Blog aracı ve yayınlama platformu</Summary>
+        <Description xml:lang="tr">Dünyanın en büyük kendinden sunuculu blog aracı ve yayınlama platformu</Description>
+    </Source>
+</PISI>
+ 
