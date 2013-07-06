@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>rubberband</Name>
+        <Summary xml:lang="en">Rubber Band Library is a high quality software library for audio time-stretching and pitch-shifting.</Summary>
+        <Description xml:lang="en">Rubber Band Library is a high quality software library for audio time-stretching and pitch-shifting. It permits you to change the tempo and pitch of an audio stream or recording dynamically and independently of one another.</Description>
+    </Source>
+
+    <Package>
+        <Name>rubberband-devel</Name>
+        <Summary xml:lang="tr">rubberband için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>

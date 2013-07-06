@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>vamp-plugin-sdk</Name>
+        <Summary xml:lang="en">Audio processing plugin system for plugins that extract descriptive information from audio data.</Summary>
+        <Description xml:lang="en">Vamp is an audio processing plugin system for plugins that extract descriptive information from audio data.</Description>
+    </Source>
+
+    <Package>
+        <Name>vamp-plugin-sdk-devel</Name>
+        <Summary xml:lang="tr">vamp-plugin-sdk için geliştirme dosyaları</Summary>
+    </Package>
+</PISI>
