@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>isl</Name>
+        <Homepage>http://www.kotnet.org/~skimo/isl/</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv2.1</License>
+        <IsA>library</IsA>
+        <Summary>Integer Set Library</Summary>
+        <Description>isl is a library for manipulating sets and relations of integer points bounded by linear constraints.</Description>
+        <Archive sha1sum="865e44828dd238377335904b81d70839977cdd83" type="tarlzma">ftp://ftp.linux.student.kuleuven.be/pub/people/skimo/isl/isl-0.12.tar.lzma</Archive>
+    </Source>
+
+    <Package>
+        <Name>isl</Name>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>isl-devel</Name>
+        <Summary>Development files for isl</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">isl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="3">
+            <Date>2013-07-24</Date>
+            <Version>0.12</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Yusuf Aydemir</Name>
+            <Email>yusuf.aydemir@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-02-16</Date>
+            <Version>0.11.1</Version>
+            <Comment>New release</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>kaptan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2012-09-05</Date>
+            <Version>0.10</Version>
+            <Comment>First release</Comment>
+            <Name>Erdem Artan</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
