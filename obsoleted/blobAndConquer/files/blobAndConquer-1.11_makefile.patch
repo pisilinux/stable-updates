@@ -1,0 +1,25 @@
+diff -ur blobAndConquer-1.11/makefile blobAndConquer-1.11.working/makefile
+--- blobAndConquer-1.11/makefile	2009-11-15 11:03:04.000000000 +0000
++++ blobAndConquer-1.11.working/makefile	2010-07-01 09:43:36.000000000 +0100
+@@ -26,7 +26,7 @@
+ CXXFLAGS += -DPAKNAME=\"$(PAKNAME)\" -DPAKLOCATION=\"$(DATADIR)\" -DGAMEPLAYMANUAL=\"$(DOCDIR)/index.html\" -Wall -pedantic
+ CXXFLAGS += -DLOCALEDIR=\"$(LOCALEDIR)\" -g
+ LIBPATH = -L/usr/X11/lib -L/usr/X11R6/lib
+-LIBS = -lGL -lGLU `sdl-config --libs` -lSDL_mixer -lSDL_image -lSDL_ttf -lz
++LIBS = -lGL -lGLU `sdl-config --libs` -lSDL_mixer -lSDL_image -lSDL_ttf -lz -lX11
+ 
+ # Yes, it means compiling is a little slower... but it's less hassle
+ SEARCHPATH += src/
+@@ -96,10 +96,10 @@
+ 
+ # linking the program.
+ $(PROG): $(GAMEOBJS)
+-	$(CXX) $(LIBS) $(GAMEOBJS) -o $(PROG)
++	$(CXX) $(GAMEOBJS) -o $(PROG) $(LIBS)
+ 	
+ pak: $(PAKOBJS)
+-	$(CXX) $(LIBS) $(PAKOBJS) -o pak
++	$(CXX) $(PAKOBJS) -o pak $(LIBS)
+ 	
+ %.mo: %.po
+ 	msgfmt -c -o $@ $<

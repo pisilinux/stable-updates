@@ -1,0 +1,23 @@
+diff -Naur blobAndConquer-1.10.orig/src/pak.cpp blobAndConquer-1.10/src/pak.cpp
+--- blobAndConquer-1.10.orig/src/pak.cpp	2008-04-25 17:38:11.000000000 +0200
++++ blobAndConquer-1.10/src/pak.cpp	2012-05-24 13:47:05.640763764 +0200
+@@ -124,8 +124,8 @@
+ 			if (!infile)
+ 			{
+ 				printf("Couldn't open %s for reading!\n", filename);
++				fclose(pak);
+ 				closedir(dirp);
+-				gzclose(pak);
+ 				exit(1);
+ 			}
+ 			
+@@ -156,8 +156,8 @@
+ 			if (!fp)
+ 			{
+ 				printf("Couldn't open %s for reading!\n", filename);
++				fclose(pak);
+ 				closedir(dirp);
+-				gzclose(pak);
+ 				exit(1);
+ 			}
+ 			else
