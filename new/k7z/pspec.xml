@@ -15,17 +15,10 @@
         <Summary>7-Zip için uygulama.</Summary>
         <Description>7-Zip için alternatif arayüz uygulamasıdır.</Description>
         <Archive sha1sum="7f04f4e56ebfa21b4b947745351bf070857f1ae3" type="tarbz2">http://k7z.googlecode.com/files/J7Z-1.2.0-bin.tar.bz2</Archive>
-        <BuildDependencies>
-            <!--<Dependency>mono-devel</Dependency>
-            <Dependency>mono-nunit</Dependency>-->
-        </BuildDependencies>
     </Source>
     
     <Package>
         <Name>k7z</Name>
-        <RuntimeDependencies>
-            <!--<Dependency>mono-runtime</Dependency>-->
-        </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
