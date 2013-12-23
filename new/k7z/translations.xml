@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<PISI>
+    <Source>
+        <Name>k7z</Name>
+        <Summary xml:lang="tr">7-Zip için uygulama.</Summary>
+        <Description xml:lang="tr">7-Zip için alternatif arayüz uygulamasıdır.</Description>
+        <Description xml:lang="en">An alternative 7-Zip GUI</Description>
+    </Source>
+</PISI>

@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>k7z</Name>
+        <Homepage>http://code.google.com/p/k7z</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <License>LGPLv3</License>
+        <Icon>J7Z</Icon>
+        <IsA>app:gui</IsA>
+        <Summary>7-Zip için uygulama.</Summary>
+        <Description>7-Zip için alternatif arayüz uygulamasıdır.</Description>
+        <Archive sha1sum="7f04f4e56ebfa21b4b947745351bf070857f1ae3" type="tarbz2">http://k7z.googlecode.com/files/J7Z-1.2.0-bin.tar.bz2</Archive>
+        <BuildDependencies>
+            <!--<Dependency>mono-devel</Dependency>
+            <Dependency>mono-nunit</Dependency>-->
+        </BuildDependencies>
+    </Source>
+    
+    <Package>
+        <Name>k7z</Name>
+        <RuntimeDependencies>
+            <!--<Dependency>mono-runtime</Dependency>-->
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/J7Z</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+        </Files>
+    </Package>
+    
+    <History>
+        <Update release="1">
+            <Date>2013-12-23</Date>
+            <Version>1.2.0</Version>
+            <Comment>First release.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
